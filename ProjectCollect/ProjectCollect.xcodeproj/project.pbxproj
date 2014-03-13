@@ -22,6 +22,8 @@
 		46A7FF6618D1A6D300B76421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A7FF4518D1A6D300B76421 /* UIKit.framework */; };
 		46A7FF6E18D1A6D300B76421 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46A7FF6C18D1A6D300B76421 /* InfoPlist.strings */; };
 		46A7FF7018D1A6D400B76421 /* ProjectCollectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A7FF6F18D1A6D400B76421 /* ProjectCollectTests.m */; };
+		46A7FF7F18D1A93B00B76421 /* FYSystemInfoManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A7FF7E18D1A93B00B76421 /* FYSystemInfoManage.m */; };
+		46A7FF8518D1ACA300B76421 /* NSDictionary+FYDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A7FF8418D1ACA300B76421 /* NSDictionary+FYDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		46A7FF6B18D1A6D300B76421 /* ProjectCollectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjectCollectTests-Info.plist"; sourceTree = "<group>"; };
 		46A7FF6D18D1A6D300B76421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		46A7FF6F18D1A6D400B76421 /* ProjectCollectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectCollectTests.m; sourceTree = "<group>"; };
+		46A7FF7D18D1A93B00B76421 /* FYSystemInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSystemInfoManage.h; sourceTree = "<group>"; };
+		46A7FF7E18D1A93B00B76421 /* FYSystemInfoManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSystemInfoManage.m; sourceTree = "<group>"; };
+		46A7FF8318D1ACA300B76421 /* NSDictionary+FYDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FYDictionary.h"; sourceTree = "<group>"; };
+		46A7FF8418D1ACA300B76421 /* NSDictionary+FYDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FYDictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 		46A7FF3518D1A6D300B76421 = {
 			isa = PBXGroup;
 			children = (
+				46A7FF7918D1A90F00B76421 /* CategoryCollect */,
+				46A7FF7A18D1A90F00B76421 /* ControllerCollect */,
+				46A7FF7B18D1A90F00B76421 /* ViewCollect */,
+				46A7FF7C18D1A90F00B76421 /* DataCollect */,
 				46A7FF4718D1A6D300B76421 /* ProjectCollect */,
 				46A7FF6918D1A6D300B76421 /* ProjectCollectTests */,
 				46A7FF4018D1A6D300B76421 /* Frameworks */,
@@ -153,6 +163,38 @@
 				46A7FF6C18D1A6D300B76421 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46A7FF7918D1A90F00B76421 /* CategoryCollect */ = {
+			isa = PBXGroup;
+			children = (
+				46A7FF8318D1ACA300B76421 /* NSDictionary+FYDictionary.h */,
+				46A7FF8418D1ACA300B76421 /* NSDictionary+FYDictionary.m */,
+			);
+			path = CategoryCollect;
+			sourceTree = "<group>";
+		};
+		46A7FF7A18D1A90F00B76421 /* ControllerCollect */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ControllerCollect;
+			sourceTree = "<group>";
+		};
+		46A7FF7B18D1A90F00B76421 /* ViewCollect */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewCollect;
+			sourceTree = "<group>";
+		};
+		46A7FF7C18D1A90F00B76421 /* DataCollect */ = {
+			isa = PBXGroup;
+			children = (
+				46A7FF7D18D1A93B00B76421 /* FYSystemInfoManage.h */,
+				46A7FF7E18D1A93B00B76421 /* FYSystemInfoManage.m */,
+			);
+			path = DataCollect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A7FF7F18D1A93B00B76421 /* FYSystemInfoManage.m in Sources */,
+				46A7FF8518D1ACA300B76421 /* NSDictionary+FYDictionary.m in Sources */,
 				46A7FF4E18D1A6D300B76421 /* main.m in Sources */,
 				46A7FF5218D1A6D300B76421 /* FYAppDelegate.m in Sources */,
 				46A7FF5B18D1A6D300B76421 /* FYViewController.m in Sources */,
