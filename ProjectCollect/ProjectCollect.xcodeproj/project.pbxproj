@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465ABE3118D2A3BC006AD247 /* FYSystemInfoManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 465ABE2F18D2A3BC006AD247 /* FYSystemInfoManage.m */; };
 		46A7FF4218D1A6D300B76421 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A7FF4118D1A6D300B76421 /* Foundation.framework */; };
 		46A7FF4418D1A6D300B76421 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A7FF4318D1A6D300B76421 /* CoreGraphics.framework */; };
 		46A7FF4618D1A6D300B76421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A7FF4518D1A6D300B76421 /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		46A7FF6618D1A6D300B76421 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A7FF4518D1A6D300B76421 /* UIKit.framework */; };
 		46A7FF6E18D1A6D300B76421 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46A7FF6C18D1A6D300B76421 /* InfoPlist.strings */; };
 		46A7FF7018D1A6D400B76421 /* ProjectCollectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A7FF6F18D1A6D400B76421 /* ProjectCollectTests.m */; };
-		46A7FF7F18D1A93B00B76421 /* FYSystemInfoManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A7FF7E18D1A93B00B76421 /* FYSystemInfoManage.m */; };
 		46A7FF8518D1ACA300B76421 /* NSDictionary+FYDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A7FF8418D1ACA300B76421 /* NSDictionary+FYDictionary.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		465ABE2F18D2A3BC006AD247 /* FYSystemInfoManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSystemInfoManage.m; sourceTree = "<group>"; };
+		465ABE3018D2A3BC006AD247 /* FYSystemInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSystemInfoManage.h; sourceTree = "<group>"; };
 		46A7FF3E18D1A6D300B76421 /* ProjectCollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A7FF4118D1A6D300B76421 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		46A7FF4318D1A6D300B76421 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +59,6 @@
 		46A7FF6B18D1A6D300B76421 /* ProjectCollectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjectCollectTests-Info.plist"; sourceTree = "<group>"; };
 		46A7FF6D18D1A6D300B76421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		46A7FF6F18D1A6D400B76421 /* ProjectCollectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectCollectTests.m; sourceTree = "<group>"; };
-		46A7FF7D18D1A93B00B76421 /* FYSystemInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSystemInfoManage.h; sourceTree = "<group>"; };
-		46A7FF7E18D1A93B00B76421 /* FYSystemInfoManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSystemInfoManage.m; sourceTree = "<group>"; };
 		46A7FF8318D1ACA300B76421 /* NSDictionary+FYDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FYDictionary.h"; sourceTree = "<group>"; };
 		46A7FF8418D1ACA300B76421 /* NSDictionary+FYDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FYDictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,8 +191,8 @@
 		46A7FF7C18D1A90F00B76421 /* DataCollect */ = {
 			isa = PBXGroup;
 			children = (
-				46A7FF7D18D1A93B00B76421 /* FYSystemInfoManage.h */,
-				46A7FF7E18D1A93B00B76421 /* FYSystemInfoManage.m */,
+				465ABE2F18D2A3BC006AD247 /* FYSystemInfoManage.m */,
+				465ABE3018D2A3BC006AD247 /* FYSystemInfoManage.h */,
 			);
 			path = DataCollect;
 			sourceTree = "<group>";
@@ -296,8 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46A7FF7F18D1A93B00B76421 /* FYSystemInfoManage.m in Sources */,
 				46A7FF8518D1ACA300B76421 /* NSDictionary+FYDictionary.m in Sources */,
+				465ABE3118D2A3BC006AD247 /* FYSystemInfoManage.m in Sources */,
 				46A7FF4E18D1A6D300B76421 /* main.m in Sources */,
 				46A7FF5218D1A6D300B76421 /* FYAppDelegate.m in Sources */,
 				46A7FF5B18D1A6D300B76421 /* FYViewController.m in Sources */,
@@ -435,10 +435,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProjectCollect/ProjectCollect-Prefix.pch";
 				INFOPLIST_FILE = "ProjectCollect/ProjectCollect-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -450,10 +455,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProjectCollect/ProjectCollect-Prefix.pch";
 				INFOPLIST_FILE = "ProjectCollect/ProjectCollect-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -519,6 +529,7 @@
 				46A7FF7518D1A6D400B76421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46A7FF7618D1A6D400B76421 /* Build configuration list for PBXNativeTarget "ProjectCollectTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +538,7 @@
 				46A7FF7818D1A6D400B76421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

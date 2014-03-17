@@ -24,9 +24,19 @@ static FYSystemInfoManage *_sharedInstance = nil;
     return _sharedInstance;
 }
 
+- (id)init
+{
+    self = [super init];
+    
+    return self;
+}
+
 - (void)dealloc
 {
     self.user_Id = nil;
+#if !__has_feature(objc_arc)
+    [super dealloc];
+#endif
 }
 
 #pragma mark - 用户信息 相关
