@@ -27,7 +27,9 @@ static FYSystemInfoManage *_sharedInstance = nil;
 - (id)init
 {
     self = [super init];
-    
+    if (self) {
+        self.languageName = [self getCurrentLanguageTable];
+    }
     return self;
 }
 
@@ -95,6 +97,28 @@ static FYSystemInfoManage *_sharedInstance = nil;
         return [NSDictionary dictionaryWithContentsOfFile:_diskCachePath];
     }
     return [NSDictionary dictionary];
+}
+
+#pragma mark - 多语言相关
+
+- (void)setCurrentLanguageTo:(NSString *)language
+{
+    if ([language isEqualToString:[self getCurrentLanguageTable]])
+    {
+        return;
+    }
+    [[NSUserDefaults standardUserDefaults] setValue:language forKey:Current_Language_Table];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+   // [[NSNotificationCenter defaultCenter] postNotificationName:kLanguage_Changed_Notification object:self];
+}
+
+- (NSString *)getCurrentLanguageTable
+{
+    NSString *languageTableName = [[NSUserDefaults standardUserDefaults] objectForKey:Current_Language_Table];
+    if ([NSString stringIsEmpty:languageTableName]) {
+        return Language_Chinese;
+    }
+    return languageTableName;
 }
 
 

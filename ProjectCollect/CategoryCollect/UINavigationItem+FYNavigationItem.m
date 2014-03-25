@@ -24,7 +24,7 @@
     }
     else
     {
-        [button setImageEdgeInsets:UIEdgeInsetsMake(0, 5, 0, 15)];
+        [button setImageEdgeInsets:UIEdgeInsetsMake(0, 5, 0, 10)];
     }
     [button addAction:block];
     self.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
