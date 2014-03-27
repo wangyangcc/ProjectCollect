@@ -47,7 +47,7 @@
     }
     //如果是在中间输入的
     if (range.location < textField.text.length - 1) {
-        NSMutableString *newPhone = [[[NSMutableString alloc] initWithString:textField.text] autorelease];
+        NSMutableString *newPhone = [[NSMutableString alloc] initWithString:textField.text];
         //当是删除时候
         if (range.length != 0) {
             [newPhone deleteCharactersInRange:range];
@@ -56,7 +56,7 @@
         else {
             [newPhone insertString:string atIndex:range.location];
         }
-        newPhone = [[[NSMutableString alloc] initWithString:[newPhone stringByReplacingOccurrencesOfString:@" " withString:@""]] autorelease] ;
+        newPhone = [[NSMutableString alloc] initWithString:[newPhone stringByReplacingOccurrencesOfString:@" " withString:@""]] ;
         if (newPhone.length > 3) {
             [newPhone insertString:@" " atIndex:3];
         }
@@ -86,7 +86,7 @@
 
 - (NSString *)getPhoneNumber
 {
-    return [[self.text stringByReplacingOccurrencesOfString:@" " withString:@""] autorelease];
+    return [self.text stringByReplacingOccurrencesOfString:@" " withString:@""] ;
 }
 
 @end

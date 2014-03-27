@@ -8,6 +8,7 @@
 
 #import "FYSystemInfoManage.h"
 #import "NSDictionary+FYDictionary.h"
+#import "NSString+FYString.h"
 
 static FYSystemInfoManage *_sharedInstance = nil;
 
