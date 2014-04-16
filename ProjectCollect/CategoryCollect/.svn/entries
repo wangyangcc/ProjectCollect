@@ -54,6 +54,13 @@ add
 has-props
 has-prop-mods
 
+NSObject+LogDealloc.m
+file
+
+
+
+add
+
 UIButton+Block.h
 file
 
@@ -109,4 +116,11 @@ add
 
 has-props
 has-prop-mods
+
+NSObject+LogDealloc.h
+file
+
+
+
+add
 

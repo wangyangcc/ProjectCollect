@@ -12,11 +12,11 @@
 
 #pragma mark - 让当前 viewcontroller 确定 statusbar的样式
 
--(UIViewController *)childViewControllerForStatusBarStyle {
+- (UIViewController *)childViewControllerForStatusBarStyle {
     return self.visibleViewController;
 }
 
--(UIViewController *)childViewControllerForStatusBarHidden {
+- (UIViewController *)childViewControllerForStatusBarHidden {
     return self.visibleViewController;
 }
 

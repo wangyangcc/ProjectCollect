@@ -108,6 +108,7 @@ static FYSystemInfoManage *_sharedInstance = nil;
     {
         return;
     }
+    self.languageName = language;
     [[NSUserDefaults standardUserDefaults] setValue:language forKey:Current_Language_Table];
     [[NSUserDefaults standardUserDefaults] synchronize];
    // [[NSNotificationCenter defaultCenter] postNotificationName:kLanguage_Changed_Notification object:self];

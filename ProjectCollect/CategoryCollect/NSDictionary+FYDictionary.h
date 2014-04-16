@@ -16,4 +16,5 @@
 
 - (NSNumber *)customNumberForKey:(NSString *)key;
 
+- (NSString *)urlEncodedString;
 @end

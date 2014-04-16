@@ -81,4 +81,8 @@
 
 + (NSString *)stringFromTimeInterval:(NSTimeInterval)interval;
 
+#pragma mark - 计算 label size 兼容 ios 7 ios 6
+
+- (CGSize)sizeOfLabelWithSize:(CGSize)size font:(UIFont *)font;
+
 @end

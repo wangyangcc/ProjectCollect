@@ -327,4 +327,19 @@
     return [NSString stringWithFormat:@"%02i:%02i", minutes, seconds];
 }
 
+#pragma mark - 计算 label size 兼容 ios 7 ios 6
+
+- (CGSize)sizeOfLabelWithSize:(CGSize)size font:(UIFont *)font
+{
+    //如果是ios7 以后
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+        paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+        NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
+        
+        return [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+    }
+    return [self sizeWithFont:font constrainedToSize:size lineBreakMode:NSLineBreakByWordWrapping];
+}
+
 @end
